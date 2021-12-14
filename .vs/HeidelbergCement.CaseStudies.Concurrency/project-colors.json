@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5f7ac118-6348-4cae-a3af-236ce0fc78e6": {
+      "ProjectGuid": "5f7ac118-6348-4cae-a3af-236ce0fc78e6",
+      "DisplayName": "HeidelbergCement.CaseStudies.Concurrency.Api",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "19977f7a-8d38-4e3b-8519-cfaa18e7e99c": {
+      "ProjectGuid": "19977f7a-8d38-4e3b-8519-cfaa18e7e99c",
+      "DisplayName": "HeidelbergCement.CaseStudies.Concurrency.Api.Test.Integration",
+      "ColorIndex": 1
+    },
+    "da9c81d5-88f9-46fa-9f76-ffa6be1575e7": {
+      "ProjectGuid": "da9c81d5-88f9-46fa-9f76-ffa6be1575e7",
+      "DisplayName": "HeidelbergCement.CaseStudies.Concurrency.Domain",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

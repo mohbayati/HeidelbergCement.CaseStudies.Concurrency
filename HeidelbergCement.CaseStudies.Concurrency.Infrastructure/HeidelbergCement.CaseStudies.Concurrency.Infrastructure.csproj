@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Remove="Migrations\**" />
+        <EmbeddedResource Remove="Migrations\**" />
+        <None Remove="Migrations\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\HeidelbergCement.CaseStudies.Concurrency.Domain\HeidelbergCement.CaseStudies.Concurrency.Domain.csproj" />
+    </ItemGroup>
+                <ItemGroup>
+                    <Compile Include="Migrations\20211206091343_InitialMigration.cs" />
+                    <Compile Include="Migrations\20211206091343_InitialMigration.Designer.cs" />
+                    <Compile Include="Migrations\ScheduleDbContextModelSnapshot.cs" />
+                </ItemGroup>
+    <!--            <ItemGroup>-->
+<!--                <Compile Include="Migrations\20211206074622_InitialMigration.cs" />-->
+<!--                <Compile Include="Migrations\20211206074622_InitialMigration.Designer.cs" />-->
+<!--                <Compile Include="Migrations\ScheduleDbContextModelSnapshot.cs" />-->
+<!--            </ItemGroup>-->
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Npgsql" Version="6.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
+    </ItemGroup>
+</Project>
