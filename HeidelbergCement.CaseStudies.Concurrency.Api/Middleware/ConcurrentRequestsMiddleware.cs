@@ -20,7 +20,7 @@ namespace HeidelbergCement.CaseStudies.Concurrency.Middleware
             {
                 IHttpResponseFeature responseFeature = context.Features.Get<IHttpResponseFeature>();
 
-                responseFeature.StatusCode = StatusCodes.Status423Locked;
+                responseFeature.StatusCode = StatusCodes.Status428PreconditionRequired;
                 responseFeature.ReasonPhrase = "Concurrent request limitation.";
 
                 Interlocked.Decrement(ref _concurrentRequests);
