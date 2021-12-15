@@ -1,1 +1,5 @@
-Please fill in your answer.
+Three solutions could be used for this issue.
+The first idea would be time-consuming for every request, once the system has received a request that related to insertion or updating an Item, it could be rejected other requests for a while, and just one request accepted, however, it is not a perfect solution because setting a time-consuming would be a tricky part of the solution and a request could be completed more or less.
+The second one and of course the best one is using a message broker like RabbitMQ or using the queue or Redis, but there is a problem with implementing that since the test case. if the queue or message broker is implemented, the test cases do not pass.
+The third one is using ETag for each request, With ETag, every request and response have ETag in the header and if an item is changed then other concurrent requests would be failed, but because of using header and setting ETag for the whole requests, this is not a good choice at this time.
+The fourth idea is also appropriate for this issue. in this term, we can pass the cases, by implementing a middleware that mange concurrent requests that are related to inserting or updating actions, and just one of them will be processed and others would be rejected.

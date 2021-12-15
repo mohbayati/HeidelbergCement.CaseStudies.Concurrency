@@ -1,1 +1,1 @@
-Please fill in your answer.
+I used Middleware for managing concurrent requests, whenever a request, which is related to post or put, comes to the process, middleware increase the counter, which indicates the counter of process, if there is more than one request has come just first one has accepted and others have rejected and got appropriate StatusCodes.
